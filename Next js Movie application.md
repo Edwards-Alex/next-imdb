@@ -252,7 +252,10 @@
 - use it's hook to send in the information to our server
 - in order to use hooks we need to deploy our application to vercel first 
 - then copy the url with deploy vercel and paste at create webhook in clerk dashboard
-- 
+
+
+
+
 
 
 
