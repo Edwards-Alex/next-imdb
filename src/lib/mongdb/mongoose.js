@@ -11,7 +11,7 @@ export const connect = async() => {
         await mongoose.connect(process.env.MONGODB_URI,{
             dbName:'next-imdb-clerk',
             useNewUrlParser:true,
-            useNewUnfiedTopology:true,
+            useUnfiedTopology:true,
         });
         initialized=true,
         console.log('MongoDB connected');
