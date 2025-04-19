@@ -272,7 +272,7 @@
   
   let initialized = false;
   export const connect = async() => {
-      mongoose.set('stricQuery',true);
+      mongoose.set('strictQuery',true);
       if(initialized){
           console.log('MongoDB already connected');
           return;
@@ -281,7 +281,7 @@
           await mongoose.connect(process.env.MONGODB_URI,{
               dbName:'next-imdb-clerk',
               useNewUrlParser:true,
-              useNewUnfiedTopology:true,
+              useUnfiedTopology:true,
           });
           initialized=true,
           console.log('MongoDB connected');
@@ -513,6 +513,12 @@ export async function POST(req) {
 ```
 
 
+
+### 8. Add About page with application description
+
+- create page.jsx at folder src/app/about
+- codes is below
+- 
 
 
 
